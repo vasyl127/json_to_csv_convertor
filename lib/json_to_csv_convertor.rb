@@ -8,7 +8,7 @@ module JsonToCsvConvertor
   
   include ConvertJson
 
-  def convert_json_to_csv(json)
+  def self.convert_json_to_csv(json)
     ConvertJson::json_to_csv(json)
   end
 
