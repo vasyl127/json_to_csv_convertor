@@ -23,7 +23,7 @@ require 'json_to_csv_convertor'
 include JsonToCsvConvertor
 
 
-json_to_csv(json)
+convert_json_to_csv(json)
 
 ## Contributing
 
