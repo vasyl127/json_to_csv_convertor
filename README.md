@@ -23,6 +23,7 @@ Or install it yourself as:
 ## Usage
 
 require 'json_to_csv_convertor'
+
 include JsonToCsvConvertor
 
 
