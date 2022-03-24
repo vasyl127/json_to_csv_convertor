@@ -1,7 +1,3 @@
-require 'csv'
-require 'json'
-require_relative 'read_json'
-
 module ConvertJson
 
   def json_to_csv(json_rows)
