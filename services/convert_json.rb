@@ -3,10 +3,8 @@ require 'json'
 require_relative 'read_json'
 
 module ConvertJson
-  include  ReadJson
 
-  def json_to_csv(json)
-    json_rows = ReadJson::make_json_readable(json)
+  def json_to_csv(json_rows)
     header_keys = head_colums(json_rows)
     csv_string = CSV.generate do |csv|
       csv << header_keys.keys

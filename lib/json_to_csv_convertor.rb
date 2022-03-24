@@ -7,9 +7,11 @@ module JsonToCsvConvertor
   class Error < StandardError; end
   
   include ConvertJson
+  include  ReadJson
 
-  def self.convert_json_to_csv(json)
-    ConvertJson::json_to_csv(json)
+
+  def convert_json_to_csv(json)
+    json_to_csv make_json_readable(json)
   end
 
 end
